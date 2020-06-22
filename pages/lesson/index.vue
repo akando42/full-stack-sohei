@@ -3,7 +3,7 @@
 		<h1> Your Lessons </h1>
 		<ul>
 			<li v-for="lesson in lessonPosts">
-				<a v-bind:href="lesson.slug">
+				<a v-bind:href="'/lesson/'+lesson.slug">
 					<div> {{ lesson.title }} </div>
 				</a>
 			</li>

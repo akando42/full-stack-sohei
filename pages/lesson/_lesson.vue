@@ -3,8 +3,13 @@
 	    <h1>{{lessonPost.title}}</h1>
 	    <div class="description"> {{lessonPost.description}}</div>
 	    <div class="content"> {{lessonPost.body}} </div>
-	    <iframe width="420" height="315" class="player"
-		   src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+	    {{lessonPost.video_link}}
+	    <iframe 
+	       width="420" 
+	       height="315" 
+	       class="player"
+		   :src="lessonPost.video_link" 
+		>
 		</iframe>
     </article>
 </template>
