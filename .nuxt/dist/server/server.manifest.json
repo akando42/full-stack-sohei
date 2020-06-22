@@ -1,0 +1,15 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/index.js": "pages/index.js",
+    "pages/lesson/_lesson.js": "pages/lesson/_lesson.js",
+    "pages/lesson/index.js": "pages/lesson/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/index.js": "pages/index.js.map",
+    "pages/lesson/_lesson.js": "pages/lesson/_lesson.js.map",
+    "pages/lesson/index.js": "pages/lesson/index.js.map",
+    "server.js": "server.js.map"
+  }
+}

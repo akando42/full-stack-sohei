@@ -65,7 +65,7 @@ export default {
       return fs.readdirSync('./assets/content/lesson').map(file => {
         return {
           route: `/lesson/${path.parse(file).name}`,
-          payload: require(`/assets/content/blog/${file}`),
+          payload: require(`./assets/content/lesson/${file}`),
         };
       });
     },
