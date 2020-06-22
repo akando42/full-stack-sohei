@@ -3,27 +3,29 @@
 	    <h1>{{lessonPost.title}}</h1>
 	    <div class="description"> {{lessonPost.description}}</div>
 	    <div class="content"> {{lessonPost.body}} </div>
-	    {{lessonPost.video_link}}
-	    <iframe 
-	       width="420" 
-	       height="315" 
-	       class="player"
-		   :src="lessonPost.video_link" 
-		>
+		<iframe 
+		  class="player"
+		  width="1120" height="630" 
+		  v-bind:src="'https://www.youtube.com/embed/'+lessonPost.video_id+'?controls=0'"
+		  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
 		</iframe>
     </article>
 </template>
 
 <script type="text/javascript">
-export default {
-	async asyncData({params, payload}){
-	    if(payload) return { lessonPost: payload};
-	    else 
-	        return {
-            lessonPost: await require(`~/assets/content/lesson/${params.lesson}.json`),
-	    };
-    },
-};
+	export default {
+		async asyncData({params, payload}){
+		    if(payload){
+		    	console.log("PAYLOAD", payload);
+		    	return { lessonPost: payload};
+		    }
+		    else 
+		        return {
+		        lessonID: '123123',
+	            lessonPost: await require(`~/assets/content/lesson/${params.lesson}.json`),
+		    };
+	    },
+	};
 </script>
 
 <style type="text/css">

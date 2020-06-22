@@ -20,4 +20,4 @@ collections:
       - {label: 'Publish Date', name: 'date', widget: 'datetime'}
       - {label: 'Description', name: 'description', widget: 'string'}
       - {label: 'Body', name: 'body', widget: 'markdown'}
-      - {label: 'Video Link', name: 'video_link', widget: 'string'}
+      - {label: 'Youtube Video ID', name: 'video_id', widget: 'string'}

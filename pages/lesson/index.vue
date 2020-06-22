@@ -14,11 +14,11 @@
 
 <script type="text/javascript">
 	export default {
-	computed: {
-	    lessonPosts(){
-	    	console.log("Lessons: ",this.$store.state.lessonPosts);
-	        return this.$store.state.lessonPosts;
-	    },
-	},
+		computed: {
+		    lessonPosts(){
+		    	console.log("Lessons: ",this.$store.state.lessonPosts);
+		        return this.$store.state.lessonPosts;
+		    },
+		},
 	};
 </script>
