@@ -1,14 +1,11 @@
-<style type="text/css">
-  .player {
-  	width: 1000px;
-  }
-</style>
-
 <template>
 	<article>
 	    <h1>{{lessonPost.title}}</h1>
-	    <div>{{lessonPost.description}}</div>
-	    <div class="player" v-html="$md.render(lessonPost.body)" />
+	    <div class="description"> {{lessonPost.description}}</div>
+	    <div class="content"> {{lessonPost.body}} </div>
+	    <iframe width="420" height="315" class="player"
+		   src="https://www.youtube.com/embed/tgbNymZ7vqY?controls=0">
+		</iframe>
     </article>
 </template>
 
@@ -23,3 +20,15 @@ export default {
     },
 };
 </script>
+
+<style type="text/css">
+  .description {
+    color: blue;
+    font-size: 21px;
+  }
+
+  .player {
+  	border: solid 3px blue;
+  	border-radius: 6px;
+  }
+</style>
