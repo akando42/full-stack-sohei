@@ -1,16 +1,20 @@
-# Video Course
+# sohei-0622
 
-## Technology Stack
+## Build Setup
 
-### Frontend - NUXT.JS
+```bash
+# install dependencies
+$ yarn install
 
-* 5 mains components
+# serve with hot reload at localhost:3000
+$ yarn dev
 
-- Vue2
-- Vue Router
-- Vuex (State storage)
-- Vue Server Render
-- Vue Meta
+# build for production and launch server
+$ yarn build
+$ yarn start
 
+# generate static project
+$ yarn generate
+```
 
-### Backend - NetlifyCMS
+For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
