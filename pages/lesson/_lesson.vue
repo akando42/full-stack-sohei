@@ -1,7 +1,15 @@
+<style type="text/css">
+  .player {
+  	width: 1000px;
+  }
+</style>
+
 <template>
-	{{lessonPost.title}}
-	{{lessonPost.description}}
-	{{lessonPost.body}}
+	<article>
+	    <h1>{{lessonPost.title}}</h1>
+	    <div>{{lessonPost.description}}</div>
+	    <div class="player" v-html="$md.render(lessonPost.body)" />
+    </article>
 </template>
 
 <script type="text/javascript">
