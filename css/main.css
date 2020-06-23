@@ -1,0 +1,10 @@
+css@font-face {
+	font-family: 'Philosopher', san-serif;
+	font-style: normal;
+	font-weight: 400;
+}
+
+body {
+	text-align: center;
+	font-family: 'Philosopher';
+}

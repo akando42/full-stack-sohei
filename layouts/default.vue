@@ -1,20 +1,24 @@
 <template>
   <div>
+    <Navigation />
     <nuxt />
+    <Footer />
+  </div>
   </div>
 </template>
+<script>
+  import Navigation from '~/components/Navigation.vue'
+  import Footer from '~/components/Footer.vue'
 
+  export default {
+    components: {
+      Navigation, 
+      Footer
+    }
+  }
+</script>
 <style>
 html {
-  font-family:
-    'Source Sans Pro',
-    -apple-system,
-    BlinkMacSystemFont,
-    'Segoe UI',
-    Roboto,
-    'Helvetica Neue',
-    Arial,
-    sans-serif;
   font-size: 16px;
   word-spacing: 1px;
   -ms-text-size-adjust: 100%;

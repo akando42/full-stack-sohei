@@ -1,10 +1,6 @@
 <template>
-  <div class="container">
+  <div class="container is-fluid">
     <div>
-      <logo />
-      <h1 class="title">
-        Full Stack Sohei
-      </h1>
       <div class="links">
         <a
           href="/lesson"
@@ -12,26 +8,24 @@
           rel="noopener noreferrer"
           class="button--green"
         >
-          Lesson
+          Sign In
         </a>
         <a
-          href="https://github.com/nuxt/nuxt.js"
+          href="/signup"
           target="_blank"
           rel="noopener noreferrer"
           class="button--grey"
         >
-          Contact
+          Get Pro Access
         </a>
       </div>
     </div>
   </div>
 </template>
-
 <script>
-import Logo from '~/components/Logo.vue'
+
 
 export default {
-
   // Adding the Netlify Identity
   head() {
     return {
@@ -39,10 +33,6 @@ export default {
         src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
       }],
     };
-  },
-
-  components: {
-    Logo
   }
 }
 </script>
