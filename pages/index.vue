@@ -1,31 +1,40 @@
 <template>
-  <div class="container is-fluid">
-    <div>
-      <div class="links">
-        <a
-          href="/lesson"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--green"
-        >
-          Sign In
-        </a>
-        <a
-          href="/signup"
-          target="_blank"
-          rel="noopener noreferrer"
-          class="button--grey"
-        >
-          Get Pro Access
-        </a>
+  <div>
+    <Banner /> 
+    <section class="section">
+      <div class="container">
+        <div class="links">
+          <a
+            href="/lesson"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button--green"
+          >
+            Free Guides
+          </a>
+          <a
+            href="/signup"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="button--grey"
+          >
+            Get Pro Access
+          </a>
+        </div>
       </div>
-    </div>
+    </section>
   </div>
 </template>
 <script>
 
+import Banner from '~/components/Banner.vue'
 
 export default {
+  // Adding Components
+  components: {
+    Banner
+  },
+
   // Adding the Netlify Identity
   head() {
     return {
@@ -34,6 +43,8 @@ export default {
       }],
     };
   }
+
+  
 }
 </script>
 
