@@ -2,12 +2,7 @@
   "date": "2020-06-22T05:07:35.113Z",
   "title": "Setting the Initial Layout and Boiler Plate",
   "description": "First iteration of the project from design to code and deployed.",
-<<<<<<< HEAD:assets/content/lesson/setting-the-initial-project-and-publish-your-first-post.json
-  "video_id": "KjoH1ZZrAik",
-  "body": "Here is how the Plasma Wakefield Accelerator Work...\n"
-=======
   "video_link": "https://www.youtube.com/watch?v=KjoH1ZZrAik",
   "body": "Here is how the Plasma Wakefield Accelerator Work...\n",
   "video_id": "Brl7WmHDG-E"
->>>>>>> 74a823e02ba0627cf4d8b02e7e2e16568afad5ae:assets/content/lesson/setting-the-intiial-project-and-publish-your-first-post.json
 }
