@@ -5,3 +5,7 @@
 This directory contains Javascript plugins that you want to run before mounting the root Vue.js application.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/guide/plugins).
+
+
+[Carrousel Type](https://github.com/fengyuanchen/vue-carousel/issues/7)
+

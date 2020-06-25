@@ -16,3 +16,7 @@ $ yarn start
 # generate static project
 $ yarn generate
 ```
+
+## Animations
+[Animation]
+(https://codepen.io/troydo42/pen/YzwVMLm?editors=1100)

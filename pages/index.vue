@@ -1,28 +1,6 @@
 <template>
   <div>
-    <Banner /> 
-    <section class="section">
-      <div class="container">
-        <div class="links">
-          <a
-            href="/lesson"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button--green"
-          >
-            Free Guides
-          </a>
-          <a
-            href="/signup"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="button--grey"
-          >
-            Get Pro Access
-          </a>
-        </div>
-      </div>
-    </section>
+    <Banner />
   </div>
 </template>
 <script>
@@ -49,7 +27,7 @@ export default {
 </script>
 
 <style>
-.container {
+.my-container {
   margin: 0 auto;
   min-height: 100vh;
   display: flex;

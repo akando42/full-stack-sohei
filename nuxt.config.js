@@ -32,6 +32,9 @@ export default {
   ** https://nuxtjs.org/guide/plugins
   */
   plugins: [
+    // { src: '~/plugins/vue-carousel', ssr: false},
+    // { src: '~/plugins/typed'},
+    { src: '~/plugins/vue-typed', ssr:false},
   ],
   /*
   ** Nuxt.js dev-modules
