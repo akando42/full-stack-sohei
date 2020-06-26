@@ -1,16 +1,25 @@
 <template>
   <div>
     <Banner />
+    <Divider />
+    <Banner />
+    <Divider />
+    <Banner />
+    <Divider />
+    <Banner />
+    <Divider />
   </div>
 </template>
 <script>
 
 import Banner from '~/components/Banner.vue'
+import Divider from '~/components/Divider.vue'
 
 export default {
   // Adding Components
   components: {
-    Banner
+    Banner, 
+    Divider,
   },
 
   // Adding the Netlify Identity
