@@ -19,12 +19,11 @@
     	</div>
     	<div id="navbarFullStackSohei" class="navbar-menu">
     		<div class="navbar-start sohei-menu">
-          <div class="navbar-item"></div>
-    			<div class="navbar-item">
+    			<a class="navbar-item sohei-item">
     		        About  
-  		    </div>
+  		    </a>
   		    <div class="navbar-item has-dropdown is-hoverable">
-  		        <a class="navbar-link">Courses</a> 
+  		        <a class="navbar-link navbar-item sohei-item">Courses</a> 
   		        <div class="navbar-dropdown">
   		        	<a class="navbar-item">
   		        		Design With Figma
@@ -37,26 +36,26 @@
   		        	</a>
   		        </div>  
   		    </div>
-  		    <div class="navbar-item">
+  		    <a class="navbar-item sohei-item">
   		        Pricing
-  		    </div>
-          <div class="navbar-item">
+  		    </a>
+          <a class="navbar-item sohei-item">
               FAQs
-          </div>
+          </a>
     		</div>
         <div class="navbar-end sohei-action">
         	<div class="navbar-item">
         		<div class="buttons">
         			<a class="button sohei-button">
-        		    	<strong> Log in</strong>
-        		    </a>
+        		    <strong> Log in</strong>
+        		  </a>
         		</div>
         	</div>
         	<div class="navbar-item">
         		<div class="buttons">
-        		    <a class="button sohei-button-dark">
-        		        <strong> Sign up</strong>
-        		    </a>
+      		    <a class="button sohei-button-dark">
+      		      <strong> Sign up</strong>
+      		    </a>
         		</div>
         	</div>
         </div>
@@ -76,6 +75,15 @@
 
 <style>
 
+a.navbar-item:hover {
+  border-bottom: solid 3px black;
+  background-color: white;
+}
+
+.navbar-dropdown {
+  margin-top: -24px;
+}
+
 .sohei-menu {
   display: flex;
   justify-content: center;
@@ -83,9 +91,12 @@
   text-align: center;
 }
 
-.sohei-action {
-  
+.sohei-item {
+  padding: 3px 10px;
+  height: 30px;
+  margin: auto 0px;
 }
+
 
 .branding-logo {
   height: 40px;
