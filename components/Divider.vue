@@ -1,12 +1,12 @@
 <template>
     <div>
-	  <div class="columns sohei-divider-1">
+	  <div class="columns is-mobile sohei-divider-1">
 	    <div class="column sohei-left"></div>
 	    <div class="column sohei-center"></div>
 	    <div class="column sohei-right"></div>
 	  </div>
 
-	  <div class="columns sohei-divider-2">
+	  <div class="columns is-mobile sohei-divider-2">
 	    <div class="column sohei-left-2"></div>
 	    <div class="column sohei-center-2"></div>
 	    <div class="column sohei-right-2"></div>
