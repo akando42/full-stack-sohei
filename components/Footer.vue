@@ -1,10 +1,6 @@
 <template>
-	<footer class="footer">
-		<div class="content has-text-centered">
-			<p>
-				<strong>Full Stack Sohei</strong>
-			</p>
-		</div>
+	<footer class="sohei-footer">
+		<strong class="footer-content">Full Stack Sohei</strong>
 	</footer>
 </template>
 
@@ -14,6 +10,14 @@
 
 <style >
 .sohei-footer {
-	background-color: blue;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  height: 60px;
 }	
+.footer-content {
+	color: white;
+	text-align: center;
+}
 </style>

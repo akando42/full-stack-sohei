@@ -2,24 +2,29 @@
   <div>
     <Banner />
     <Divider />
-    <Banner />
+    <LeftFeature />
     <Divider />
-    <Banner />
+    <RightFeature />
     <Divider />
-    <Banner />
-    <Divider />
+    <CallToAction />
   </div>
 </template>
 <script>
 
 import Banner from '~/components/Banner.vue'
 import Divider from '~/components/Divider.vue'
+import LeftFeature from '~/components/LeftFeature.vue'
+import RightFeature from '~/components/RightFeature.vue'
+import CallToAction from '~/components/CallToAction.vue'
 
 export default {
   // Adding Components
   components: {
     Banner, 
     Divider,
+    LeftFeature, 
+    RightFeature,
+    CallToAction,
   },
 
   // Adding the Netlify Identity
