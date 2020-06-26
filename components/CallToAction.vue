@@ -15,11 +15,14 @@
 </script>
 <style type="text/css">
 .call_to_action {
+	font-family: 'Philosopher', san-serif !important;
 	padding: 40px 0px;
 	text-align: center;
 	font-size: 30px;
 }
+
 .call_to_action_button {
+	font-family: 'Philosopher', san-serif !important;
 	text-align: center;
 	font-size: 21px;
 	color: white;

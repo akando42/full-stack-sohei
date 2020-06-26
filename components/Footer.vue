@@ -10,12 +10,14 @@
 
 <style >
 .sohei-footer {
+  font-family: 'Philosopher', san-serif !important;
   display: flex;
   align-items: center;
   justify-content: center;
   background-color: black;
   height: 60px;
-}	
+}
+	
 .footer-content {
 	color: white;
 	text-align: center;

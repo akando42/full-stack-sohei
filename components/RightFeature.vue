@@ -24,6 +24,7 @@
 </template>
 <style>
 .sohei-feature-title {
+  font-family: 'Philosopher', san-serif !important;
   text-align: left !important;
   font-size: 33px;
   font-weight: 700;
@@ -37,12 +38,11 @@
 }
 
 .description {
+  font-family: 'Philosopher', san-serif !important;
   text-align: right;
   padding: 40px 80px;
 }
-.title {
 
-}
 .paragraph {
   margin: 20px 0px;
 }
