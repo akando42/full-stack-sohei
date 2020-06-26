@@ -19,44 +19,47 @@
     	</div>
     	<div id="navbarFullStackSohei" class="navbar-menu">
     		<div class="navbar-start sohei-menu">
+          <div class="navbar-item"></div>
     			<div class="navbar-item">
     		        About  
-    		    </div>
-    		    <div class="navbar-item has-dropdown is-hoverable">
-    		        <a class="navbar-link">Courses</a> 
-    		        <div class="navbar-dropdown">
-    		        	<a class="navbar-item">
-    		        		Design With Figma
-    		        	</a>
-    		        	<a class="navbar-item">
-    		        		Frontend With NuxtJS and VueJS
-    		        	</a>
-    		        	<a class="navbar-item">
-    		        		Backend Microservices With Netlify Functions & FaunaDB
-    		        	</a>
-    		        </div>  
-    		    </div>
-    		    <div class="navbar-item">
-    		        Pricing
-    		    </div>
-    		</div>
-          <div class="navbar-end">
-          	<div class="navbar-item">
-          		<div class="buttons">
-          			<a class="button sohei-button">
-          		    	<strong> Log in</strong>
-          		    </a>
-          		</div>
-          	</div>
-          	<div class="navbar-item">
-          		<div class="buttons">
-          		    <a class="button sohei-button-dark">
-          		        <strong> Sign up</strong>
-          		    </a>
-          		</div>
-          	</div>
+  		    </div>
+  		    <div class="navbar-item has-dropdown is-hoverable">
+  		        <a class="navbar-link">Courses</a> 
+  		        <div class="navbar-dropdown">
+  		        	<a class="navbar-item">
+  		        		Design With Figma
+  		        	</a>
+  		        	<a class="navbar-item">
+  		        		Frontend With NuxtJS and VueJS
+  		        	</a>
+  		        	<a class="navbar-item">
+  		        		Backend Microservices With Netlify Functions & FaunaDB
+  		        	</a>
+  		        </div>  
+  		    </div>
+  		    <div class="navbar-item">
+  		        Pricing
+  		    </div>
+          <div class="navbar-item">
+              FAQs
           </div>
-    		
+    		</div>
+        <div class="navbar-end sohei-action">
+        	<div class="navbar-item">
+        		<div class="buttons">
+        			<a class="button sohei-button">
+        		    	<strong> Log in</strong>
+        		    </a>
+        		</div>
+        	</div>
+        	<div class="navbar-item">
+        		<div class="buttons">
+        		    <a class="button sohei-button-dark">
+        		        <strong> Sign up</strong>
+        		    </a>
+        		</div>
+        	</div>
+        </div>
     	</div>
     </nav>
 </div>
@@ -72,6 +75,17 @@
 </script>
 
 <style>
+
+.sohei-menu {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  text-align: center;
+}
+
+.sohei-action {
+  
+}
 
 .branding-logo {
   height: 40px;

@@ -103,7 +103,7 @@
   background: rgb(248, 121, 121);
   z-index: 999; 
   box-shadow: 0 0 50px rgba(255, 0, 0, 0.5);
-  filter: blur(0px) contrast(10);
+  filter: blur(5px) contrast(10);
 }
 
 .sea {
@@ -113,17 +113,19 @@
   width: 500px;
   height: 300px;
   margin: -150px 0px 0 -250px;
-  filter: blur(20px) contrast(50);
+  filter: blur(15px) contrast(300);
+
 }
 	
 .wave {
+  background-color: red;
   position: absolute;
   top: 50%;
   left: 50%;
   width: 340px;
   height: 40px;
-  margin: 30px 0 0 -170px;
-  background: #FF0000;
+  margin: 20px 0 0 -170px;
+  background: red;
   border-radius: 100%;
 }
 
@@ -142,6 +144,8 @@
 .wave:nth-child(6) {
   animation: waving 2000ms infinite linear -2000ms;
 }
+
+
 
 @keyframes waving {
   0% {
