@@ -21,7 +21,6 @@
 		    }
 		    else 
 		        return {
-		        lessonID: '123123',
 	            lessonPost: await require(`~/assets/content/lesson/${params.lesson}.json`),
 		    };
 	    },

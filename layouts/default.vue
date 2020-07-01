@@ -26,6 +26,7 @@ html {
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   box-sizing: border-box;
+  height: 100%;
 }
 
 *,
@@ -33,6 +34,10 @@ html {
 *::after {
   box-sizing: border-box;
   margin: 0;
+}
+
+.davinci-private-note {
+  transform: rotateY(180deg) !important;
 }
 
 .button--green {

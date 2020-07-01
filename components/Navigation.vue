@@ -1,10 +1,12 @@
 <template>
-  <div class="container">
+    <div class="container is-fullwidth">
     <nav class="navbar sohei-nav" role="navigation" aria-label="main navigation">
     	<div class="navbar-brand">
-    		<a class="navbar-item" href="/">
-    			<Logo class="branding-logo" />
-    		</a>
+    		<span class="navbar-item">
+          <a href="/">
+    			  <Logo class="branding-logo" />
+          </a>
+    		</span>
     		<a 
     		    role="button" 
     		    class="navbar-burger burger" 
@@ -19,41 +21,41 @@
     	</div>
     	<div id="navbarFullStackSohei" class="navbar-menu">
     		<div class="navbar-start sohei-menu">
-    			<a class="navbar-item sohei-item">
+    			<a class="navbar-item sohei-item" href="/about">
     		        About  
   		    </a>
   		    <div class="navbar-item has-dropdown is-hoverable">
   		        <a class="navbar-link navbar-item sohei-item">Courses</a> 
   		        <div class="navbar-dropdown">
-  		        	<a class="navbar-item">
+  		        	<a class="navbar-item" href="/lesson">
   		        		Design With Figma
   		        	</a>
-  		        	<a class="navbar-item">
+  		        	<a class="navbar-item" href="/lesson">
   		        		Frontend With NuxtJS and VueJS
   		        	</a>
-  		        	<a class="navbar-item">
+  		        	<a class="navbar-item" href="/lesson">
   		        		Backend Microservices With Netlify Functions & FaunaDB
   		        	</a>
   		        </div>  
   		    </div>
-  		    <a class="navbar-item sohei-item">
+  		    <a class="navbar-item sohei-item" href="/pricing">
   		        Pricing
   		    </a>
-          <a class="navbar-item sohei-item">
+          <a class="navbar-item sohei-item" href="/faqs">
               FAQs
           </a>
     		</div>
         <div class="navbar-end sohei-action">
         	<div class="navbar-item">
         		<div class="buttons">
-        			<a class="button sohei-button">
+        			<a class="button sohei-button" href="/login">
         		    <strong> Log in</strong>
         		  </a>
         		</div>
         	</div>
         	<div class="navbar-item">
         		<div class="buttons">
-      		    <a class="button sohei-button-dark">
+      		    <a class="button sohei-button-dark" href="/signup">
       		      <strong> Sign up</strong>
       		    </a>
         		</div>
@@ -61,7 +63,7 @@
         </div>
     	</div>
     </nav>
-</div>
+    </div>
 </template>
 
 <script>

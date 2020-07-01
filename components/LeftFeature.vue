@@ -12,7 +12,7 @@
 				</div>
 				<div class="column">
 					<div class="description">
-						<div class="sohei-feature-title">
+						<div class="sohei-feature-title davinci-private-note">
 						    Master The 20% To Do 80% Of The Job 
 						</div>
 

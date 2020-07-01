@@ -16,10 +16,11 @@
   justify-content: center;
   background-color: black;
   height: 60px;
+  width: 100%;
 }
 	
 .footer-content {
-	color: white;
-	text-align: center;
+   color: white;
+   text-align: center;
 }
 </style>

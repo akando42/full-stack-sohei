@@ -2,7 +2,7 @@
 	<section class="hero is-medium sohei-hero">
 	    <div class="hero-body">
 		    <div class="container">
-				<div class="sohei-title">
+				<div class="sohei-title davinci-private-note">
 				    Mastering Full Stack Development
 				</div>
 				<div class="sohei-animation">
@@ -18,10 +18,10 @@
 				</div>
 			    <div class="links">
 			      <a
-			        href="/lesson"
+			        href="/login"
 			        target="_blank"
 			        rel="noopener noreferrer"
-			        class="sohei-yin"
+			        class="sohei-yin davinci-private-note"
 			      >
 			        Login
 			      </a>
