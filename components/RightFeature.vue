@@ -1,52 +1,60 @@
 <template>
-	<div>
+	<div class="section">
+		<div class="container sohei-feature">			
 		<div class="columns">
 			<div class="column">
 				<div class="description">
-					<div class="sohei-feature-title">
+					<div class="sohei-feature-title-right">
 					    From Idea To Product In An Execution Blitz
 					</div>
-					<p class="paragraph">
+
+					<p class="paragraph-right">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 					</p>
 
-					<p class="paragraph">
+					<p class="paragraph-right">
 						Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 					</p>
 				</div>
 			</div>
 
 			<div class="column is-half">
-				<div class="media"></div>
+				<div class="media">
+					<iframe 
+					class="sohei-media"
+					src="https://www.youtube.com/embed/nteDXuqBfn0">
+					</iframe>
+				</div>
 			</div>
+		</div>
 		</div>
 	</div>
 </template>
+
 <style>
-.sohei-feature-title {
+.sohei-feature-title-right {
   font-family: 'Philosopher', san-serif !important;
-  text-align: left !important;
-  font-size: 33px;
-  font-weight: 700;
+  font-size: 45px;
+  font-style: 'normal';
+  text-align: right;
 }
 
 .media {
   background-color: black;
-  width: 700px;
-  height: 500px;
-  margin: 30px 80px 30px 0px;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  display: flex;
 }
 
-.description {
-  font-family: 'Philosopher', san-serif !important;
-  text-align: right;
-  padding: 40px 80px;
-}
 
-.paragraph {
+.paragraph-right {
   margin: 20px 0px;
+  text-align: right;
 }
 </style>
+
 <script>
 	
 </script>

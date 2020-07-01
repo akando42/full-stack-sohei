@@ -27,7 +27,7 @@ export default {
     CallToAction,
   },
 
-  // Adding the Netlify Identity
+  // Adding Netlify Identity Function
   head() {
     return {
       script: [{
@@ -35,8 +35,6 @@ export default {
       }],
     };
   }
-
-  
 }
 </script>
 
@@ -48,14 +46,6 @@ export default {
   justify-content: center;
   align-items: center;
   text-align: center;
-}
-
-.title {
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
 }
 
 .subtitle {
