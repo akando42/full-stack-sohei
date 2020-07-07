@@ -25,7 +25,7 @@ export default {
   */
   css: [
     '~/css/main.css',
-    //'~/css/debug.css',
+    // '~/css/debug.css',
     'bulma/css/bulma.css',
   ],
   /*

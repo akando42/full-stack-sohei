@@ -46,6 +46,7 @@
           </a>
     		</div>
         <div class="navbar-end sohei-action">
+          
         	<div class="navbar-item">
         		<div class="buttons">
         			<a class="button sohei-button" href="/login">
@@ -60,6 +61,10 @@
       		    </a>
         		</div>
         	</div>
+
+          <div class="navbar-item">
+            <ProfileIcon />
+          </div>
         </div>
     	</div>
     </nav>
@@ -68,9 +73,12 @@
 
 <script>
 	import Logo from '~/components/Logo.vue'
+  import ProfileIcon from '~/components/ProfileIcon.vue'
+
 	export default {
 		components: {
-			Logo
+			Logo,
+      ProfileIcon
 		}
 	}
 </script>

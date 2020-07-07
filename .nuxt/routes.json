@@ -1,20 +1,30 @@
 [
   {
+    "name": "dashboard",
+    "path": "/dashboard",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/dashboard/index.vue",
+    "chunkName": "pages/dashboard/index",
+    "_name": "_260659d2"
+  },
+  {
     "name": "lesson",
     "path": "/lesson",
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/lesson/index.vue",
-    "chunkName": "pages/lesson/index"
+    "chunkName": "pages/lesson/index",
+    "_name": "_4c4c9ceb"
   },
   {
     "name": "lesson-lesson",
     "path": "/lesson/:lesson",
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/lesson/_lesson.vue",
-    "chunkName": "pages/lesson/_lesson"
+    "chunkName": "pages/lesson/_lesson",
+    "_name": "_5a8737b0"
   },
   {
     "name": "index",
     "path": "/",
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/index.vue",
-    "chunkName": "pages/index"
+    "chunkName": "pages/index",
+    "_name": "_159ca25c"
   }
 ]
