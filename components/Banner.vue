@@ -2,7 +2,11 @@
 	<section class="hero is-medium sohei-hero">
 	    <div class="hero-body">
 		    <div class="container">
-				<div class="sohei-title davinci-private-note">
+				<div class="sohei-title"
+          @mouseover="hover = true"
+          @mouseleave="hover = false"
+          :class="{davinci_private_note: hover}"
+        >
 				    Mastering Full Stack Development
 				</div>
 				<div class="sohei-animation">
@@ -54,7 +58,13 @@
   // 		// Slide,
   // 	}
   // }
-
+  export default {
+  data() {
+    return {
+      hover: false,
+      };
+    }
+  }
 	
 </script>
 
@@ -70,6 +80,15 @@
   font-family: 'Philosopher', san-serif !important;
   font-size: 45px;
   font-style: 'normal';
+
+  &::hover {
+    background-color: red;
+  };
+}
+
+.sohie-title::hover {
+  transform: rotateY(180deg) !important;
+  background-color: color;
 }
 
 .sohei-yin {

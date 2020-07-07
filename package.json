@@ -1,6 +1,7 @@
 {
-  "name": "Full Stack Sohei - Mastering Full Stack Development",
+  "name": "full_stack_sohei",
   "version": "1.0.0",
+  "license": "MIT",
   "private": true,
   "scripts": {
     "dev": "nuxt",

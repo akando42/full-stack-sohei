@@ -36,7 +36,7 @@ html {
   margin: 0;
 }
 
-.davinci-private-note {
+.davinci_private_note {
   transform: rotateY(180deg) !important;
 }
 
