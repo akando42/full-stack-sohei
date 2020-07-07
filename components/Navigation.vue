@@ -47,7 +47,7 @@
     		</div>
         <div class="navbar-end sohei-action">
           
-        	<div class="navbar-item">
+        	<!-- <div class="navbar-item">
         		<div class="buttons">
         			<a class="button sohei-button" href="/login">
         		    <strong> Log in</strong>
@@ -60,7 +60,7 @@
       		      <strong> Sign up</strong>
       		    </a>
         		</div>
-        	</div>
+        	</div> -->
 
           <div class="navbar-item">
             <ProfileIcon />
