@@ -1,4 +1,4 @@
-# sohei-0622
+# full-stack-sohei
 
 ## Build Setup
 
@@ -22,3 +22,11 @@ $ yarn generate
 (https://codepen.io/troydo42/pen/YzwVMLm?editors=1100)
 
 [Elevator](http://tholman.com/elevator.js/)
+
+## Features
+
+Use VueX State Management for Authentication and User Progress.
+https://nuxtjs.org/guide/vuex-store
+
+Use MongoDB and GraphQL for Longterm State Management. 
+https://github.com/akshayymahajan/netlify-functions-mongodb-graphql 

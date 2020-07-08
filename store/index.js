@@ -1,10 +1,15 @@
 export const state = () => ({
 	lessonPosts: [],
+	authenticated: false,
 })
 
 export const mutations = {
 	setLessonPosts(state, list){
 		state.lessonPosts = list;
+	},
+
+	updateAuthenticate(state){
+		state.authenticated = true;
 	},
 };
 
@@ -19,6 +24,7 @@ export const actions = {
 			res.slug = key.slice(2, -5);
 			return res;
 		});
+
 		// Commit response to State Storage
 		await commit('setLessonPosts', lessonPosts);
 	},
