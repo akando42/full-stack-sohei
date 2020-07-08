@@ -14,6 +14,13 @@
     "_name": "_4c4c9ceb"
   },
   {
+    "name": "pricing",
+    "path": "/pricing",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/pricing/index.vue",
+    "chunkName": "pages/pricing/index",
+    "_name": "_6362a86e"
+  },
+  {
     "name": "lesson-lesson",
     "path": "/lesson/:lesson",
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/lesson/_lesson.vue",

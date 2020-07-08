@@ -13,6 +13,9 @@
   	computed: {
   		username(){
   			return this.$store.state.user.name
+  		}, 
+  		changeAccess(){
+  			
   		}
   	}
   	
