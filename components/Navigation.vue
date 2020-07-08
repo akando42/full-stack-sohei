@@ -46,25 +46,19 @@
           </a>
     		</div>
         <div class="navbar-end sohei-action">
-          
-        	<!-- <div class="navbar-item">
+          <div v-if="authenticated" class="navbar-item">
+            <ProfileIcon :username="Tesla" />
+          </div>
+        	<div class="navbar-item" v-else>
         		<div class="buttons">
         			<a class="button sohei-button" href="/login">
         		    <strong> Log in</strong>
         		  </a>
+              <a class="button sohei-button-dark" href="/signup">
+                <strong> Sign up</strong>
+              </a>
         		</div>
         	</div>
-        	<div class="navbar-item">
-        		<div class="buttons">
-      		    <a class="button sohei-button-dark" href="/signup">
-      		      <strong> Sign up</strong>
-      		    </a>
-        		</div>
-        	</div> -->
-
-          <div class="navbar-item">
-            <ProfileIcon />
-          </div>
         </div>
     	</div>
     </nav>
@@ -72,10 +66,21 @@
 </template>
 
 <script>
+  import {mapMutations} from 'vuex'
 	import Logo from '~/components/Logo.vue'
   import ProfileIcon from '~/components/ProfileIcon.vue'
 
 	export default {
+    computed: {
+      authenticated(){
+        return this.$store.state.user.authenticated
+      }, 
+    },
+    methods: {
+      inAndOut (){
+        this.$store.dispatch('toggle')
+      }
+    },
 		components: {
 			Logo,
       ProfileIcon
@@ -85,44 +90,44 @@
 
 <style>
 
-a.navbar-item:hover {
-  border-bottom: solid 3px black;
-  background-color: white;
-}
+  a.navbar-item:hover {
+    border-bottom: solid 3px black;
+    background-color: white;
+  }
 
-.navbar-dropdown {
-  margin-top: -24px;
-}
+  .navbar-dropdown {
+    margin-top: -24px;
+  }
 
-.sohei-menu {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  text-align: center;
-}
+  .sohei-menu {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    text-align: center;
+  }
 
-.sohei-item {
-  padding: 3px 10px;
-  height: 30px;
-  margin: auto 0px;
-}
+  .sohei-item {
+    padding: 3px 10px;
+    height: 30px;
+    margin: auto 0px;
+  }
 
 
-.branding-logo {
-  height: 40px;
-  width: auto;
-}
-.sohei-nav {
-	height: 80px;
-}
+  .branding-logo {
+    height: 40px;
+    width: auto;
+  }
+  .sohei-nav {
+  	height: 80px;
+  }
 
-.sohei-button {
-  border: solid 1px black;
-}
+  .sohei-button {
+    border: solid 1px black;
+  }
 
-.sohei-button-dark {
-  border: solid 1px black;
-  background-color: black;
-  color: white;
-}
+  .sohei-button-dark {
+    border: solid 1px black;
+    background-color: black;
+    color: white;
+  }
 </style>

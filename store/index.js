@@ -1,16 +1,12 @@
 export const state = () => ({
 	lessonPosts: [],
-	authenticated: false,
+	
 })
 
 export const mutations = {
 	setLessonPosts(state, list){
 		state.lessonPosts = list;
-	},
-
-	updateAuthenticate(state){
-		state.authenticated = true;
-	},
+	}
 };
 
 export const actions = {
