@@ -51,7 +51,7 @@
           </div>
         	<div class="navbar-item" v-else>
         		<div class="buttons">
-        			<a class="button sohei-button" href="/login">
+        			<a class="button sohei-top-button" href="/login">
         		    <strong> Log in</strong>
         		  </a>
               <a class="button sohei-button-dark" href="/signup">
@@ -121,7 +121,7 @@
   	height: 80px;
   }
 
-  .sohei-button {
+  .sohei-top-button {
     border: solid 1px black;
   }
 

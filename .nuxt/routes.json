@@ -14,11 +14,25 @@
     "_name": "_4c4c9ceb"
   },
   {
+    "name": "login",
+    "path": "/login",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/login/index.vue",
+    "chunkName": "pages/login/index",
+    "_name": "_eb9df4a8"
+  },
+  {
     "name": "pricing",
     "path": "/pricing",
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/pricing/index.vue",
     "chunkName": "pages/pricing/index",
     "_name": "_6362a86e"
+  },
+  {
+    "name": "signup",
+    "path": "/signup",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/signup/index.vue",
+    "chunkName": "pages/signup/index",
+    "_name": "_1093ee6a"
   },
   {
     "name": "lesson-lesson",

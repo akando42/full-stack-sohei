@@ -2,8 +2,9 @@
 /// STATES ///
 export const state = () => ({
 	authenticated: false,
+	hasAccount: false,
 	name: "Noname",
-	email: "email@email.com"
+	email: "email@email.com", 
 })
 
 /// MUTATIONS ///
