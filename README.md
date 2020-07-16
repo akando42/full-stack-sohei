@@ -1,6 +1,4 @@
-# Video Course
-
-## Technology Stack
+# Reverse Engineering Everything
 
 ### Frontend - NUXT.JS
 
