@@ -1,4 +1,4 @@
-# Make Cool Stuffs From Scratch
+# Reverse Engineering Everything
 
 ### Frontend - NUXT.JS
 
