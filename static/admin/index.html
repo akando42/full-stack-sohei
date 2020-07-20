@@ -10,8 +10,40 @@
 </head>
 
 <body>
+	<div>Content Producer Page</div>
 
 	<!-- Netlify CMS -->
 	<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+	<script type="text/javascript">
+		CMS.registerEditorComponent({
+			// Internal ID of the Component
+			id: "youtube",
+			label: "Mytube",
+			fields: [
+			    name: "id",
+			    label: "Youtube Video ID",
+			    widget: "string"
+			],
+			pattern: /^youtube (\S+)$/,
+			// Extracting the Youtube ID
+			fromBlock: function(match){
+				return {
+					id: match[1]
+				}
+			},
+			// Generating the Complete Link
+			toBlock: function(obj){
+				return 'youtube'+obj.id;
+			},
+			
+			// Generating the Preview
+			toPreview: function(obj){
+				return (
+					'<img src="http://img.youtube.com/vi/'+obj.id+
+				)
+			}
+
+		})
+	</script>
 </body>
 </html>

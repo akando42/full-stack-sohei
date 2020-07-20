@@ -17,11 +17,17 @@ $ yarn start
 $ yarn generate
 ```
 
+## Immediate Tasks
+[ ] Custom Content Creator Signup
+[ ] Add New Content
+[ ] Display New Content
+
 ## Animations
 [Animation]
 (https://codepen.io/troydo42/pen/YzwVMLm?editors=1100)
 
-[Elevator](http://tholman.com/elevator.js/)
+[Elevator]
+(http://tholman.com/elevator.js/)
 
 ## Features
 
