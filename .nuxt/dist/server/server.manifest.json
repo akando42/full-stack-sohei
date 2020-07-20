@@ -1,0 +1,23 @@
+{
+  "entry": "server.js",
+  "files": {
+    "pages/dashboard/index.js": "pages/dashboard/index.js",
+    "pages/index.js": "pages/index.js",
+    "pages/lesson/_lesson.js": "pages/lesson/_lesson.js",
+    "pages/lesson/index.js": "pages/lesson/index.js",
+    "pages/login/index.js": "pages/login/index.js",
+    "pages/pricing/index.js": "pages/pricing/index.js",
+    "pages/signup/index.js": "pages/signup/index.js",
+    "server.js": "server.js"
+  },
+  "maps": {
+    "pages/dashboard/index.js": "pages/dashboard/index.js.map",
+    "pages/index.js": "pages/index.js.map",
+    "pages/lesson/_lesson.js": "pages/lesson/_lesson.js.map",
+    "pages/lesson/index.js": "pages/lesson/index.js.map",
+    "pages/login/index.js": "pages/login/index.js.map",
+    "pages/pricing/index.js": "pages/pricing/index.js.map",
+    "pages/signup/index.js": "pages/signup/index.js.map",
+    "server.js": "server.js.map"
+  }
+}
