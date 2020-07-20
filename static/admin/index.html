@@ -11,7 +11,9 @@
 
 <body>
 	<!-- Netlify CMS -->
-	<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js"></script>
+	<script src="https://unpkg.com/netlify-cms@^2.0.0/dist/netlify-cms.js">
+	</script>
+
 	<script type="text/javascript">
 		CMS.registerEditorComponent({
 			// Internal ID of the Component
@@ -27,7 +29,7 @@
 			fromBlock: function(match){
 				return {
 					id: match[1]
-				}
+				};
 			},
 			// Generating the Complete Link
 			toBlock: function(obj){
@@ -37,10 +39,9 @@
 			// Generating the Preview
 			toPreview: function(obj){
 				return (
-					'<img src="http://img.youtube.com/vi/'+obj.id+
-				)
+					'<img src="http://img.youtube.com/vi/'+obj.id++ '/maxresdefault.jpg" alt="Youtube Video"/>'
+				);
 			}
-
 		})
 	</script>
 </body>
