@@ -12,9 +12,7 @@
 			    placeholder="Please enter your password"
 			> -->
 
-			<div
-			    class="button sohei-button"
-			>
+			<div class="button sohei-button">
 				<i class="fa fa-github fa-sohei" aria-hidden="true"></i>
 				Login with Github
 			</div>

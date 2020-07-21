@@ -18,7 +18,7 @@
 			> -->
 			<div
 			    class="button sohei-button"
-			    v-on:click="triggerNetlifyIdentityAction('signup')"
+			    v-on:click="triggerGithubAuthentication('signup')"
 			>
 				Signup with Github
 			</div>
