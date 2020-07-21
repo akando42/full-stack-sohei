@@ -30,6 +30,7 @@
 		</div>
 	</div>
 </template>
+
 <script type="text/javascript">
 	export default {
 		computed: {
@@ -57,7 +58,6 @@
 		width: 30vw;
 		margin: 2vh 0px;
 	}
-
 	
 	.sohei-button {
 		background-color: black;

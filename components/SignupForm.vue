@@ -9,19 +9,21 @@
 
 			<input 
 			    class="input sohei-input" 
-			    type="text" 
+			    type="password" 
 			    placeholder="Please enter your password"
 			>
 			<input 
 			    class="input sohei-input"  
-			    type="text" 
+			    type="password" 
 			    placeholder="Please re-enter your password"
 			>
 			<div
 			    class="button sohei-button"
+			    v-on:click="triggerNetlifyIdentityAction('login')"
 			>
 				Signup
 			</div>
+
 			<div class="sohei-divider"> 
 			    or 
 			</div>
@@ -29,6 +31,7 @@
 			<div class="button sohei-social-button">
 				Signup with Github
 			</div>
+
 			<div class="button sohei-social-button">
 				Signup with Gmail
 			</div>
@@ -37,10 +40,24 @@
 </template>
 
 <script type="text/javascript">
+	import netlifyIdentity from 'netlify-identity-widget'
+	import {mapActions, mapState} from 'vuex'
+    
+    netlifyIdentity.init();
+
 	export default {
 		computed: {
 			hasAccount(){
 				return this.$store.state.user.hasAccount
+			}
+		}, 
+		methods: {
+			triggerNetlifyIdentityAction(action){
+				if (action == "login" || action == "signup"){
+					this.$refs.alert.appear('Login is Triggered');
+				} else if (action == "logout"){
+					this.$refs.alert.appear('Logout is Triggered');
+				}
 			}
 		}
 	}
