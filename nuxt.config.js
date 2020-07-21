@@ -52,7 +52,18 @@ export default {
     // Doc: https://axios.nuxtjs.org/usage
     '@nuxtjs/axios',
     '@nuxtjs/markdownit',
+    '@nuxtjs/auth',
+    '@nuxtjs/fontawesome',
   ],
+  auth: {
+    // Nuxt Authentication Options
+    strategies: {
+      github: {
+        client_id:'7cb17637ab4aa3fff7a2',
+        client_secret: 'fe711a3017e00270b49f1e433f0ce0799985c7c5'
+      }
+    }
+  },
   markdownit: {
     injected: true,
   },

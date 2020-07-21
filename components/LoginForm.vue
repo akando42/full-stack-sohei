@@ -11,13 +11,15 @@
 			    type="text" 
 			    placeholder="Please enter your password"
 			>
+
 			<div
 			    class="button sohei-button"
 			>
-				Login
+				<i class="fa fa-github fa-sohei" aria-hidden="true"></i>
+				Login with Github
 			</div>
 
-			<div class="sohei-divider"> 
+<!-- 			<div class="sohei-divider"> 
 			    or 
 			</div>
 
@@ -26,7 +28,7 @@
 			</div>
 			<div class="button sohei-social-button">
 				Login with Gmail
-			</div>
+			</div> -->
 		</div>
 	</div>
 </template>
@@ -40,7 +42,11 @@
 		}
 	}
 </script>
+
 <style type="text/css">
+    .sohei-fa {
+    	color: white;
+    }
     .sohei-form {
     	width: 30vw;
     	height: 60vh;

@@ -1,7 +1,7 @@
 <template>
     <div class="section">    
         <div class="container sohei-form">
-			<input 
+<!-- 			<input 
 			    class="input sohei-input" 
 			    type="text" 
 			    placeholder="Please enter your email"
@@ -16,52 +16,33 @@
 			    class="input sohei-input"  
 			    type="password" 
 			    placeholder="Please re-enter your password"
-			>
+			> -->
 			<div
 			    class="button sohei-button"
-			    v-on:click="triggerNetlifyIdentityAction('login')"
+			    v-on:click="triggerNetlifyIdentityAction('signup')"
 			>
-				Signup
+				Signup with Github
 			</div>
 
-			<div class="sohei-divider"> 
+			<!-- <div class="sohei-divider"> 
 			    or 
 			</div>
 
-			<div class="button sohei-social-button">
+			<div 
+			    class="button sohei-social-button"
+			    v-on:click="triggerGithubAuthentication('signup')"
+			>
 				Signup with Github
 			</div>
 
 			<div class="button sohei-social-button">
 				Signup with Gmail
-			</div>
+			</div> -->
+
 		</div>
 	</div>
 </template>
 
-<script type="text/javascript">
-	import netlifyIdentity from 'netlify-identity-widget'
-	import {mapActions, mapState} from 'vuex'
-    
-    netlifyIdentity.init();
-
-	export default {
-		computed: {
-			hasAccount(){
-				return this.$store.state.user.hasAccount
-			}
-		}, 
-		methods: {
-			triggerNetlifyIdentityAction(action){
-				if (action == "login" || action == "signup"){
-					this.$refs.alert.appear('Login is Triggered');
-				} else if (action == "logout"){
-					this.$refs.alert.appear('Logout is Triggered');
-				}
-			}
-		}
-	}
-</script>
 <style type="text/css">
     .sohei-form {
     	width: 30vw;
@@ -81,9 +62,48 @@
 		color: white;
 		width: 30vw;
 	}
+
+	.sohei-button:hover {
+		background-color: white;
+		border: 3px solid black;
+		color: black;
+	}
+
 	.sohei-social-button {
 		margin: 1vh 0px;
         width: 30vw;
 		margin: 2vh 0px;
 	}
 </style>
+
+<script type="text/javascript">
+	// import netlifyIdentity from 'netlify-identity-widget'
+	import {mapActions, mapState} from 'vuex'
+    
+    // netlifyIdentity.init();
+
+	export default {
+		computed: {
+			hasAccount(){
+				return this.$store.state.user.hasAccount
+			}
+		}, 
+		methods: {
+			triggerGithubAuthentication(action){
+				if (action == "login" || action =="signup"){
+					this.$auth.loginWith('github');
+				} else if (action == "logout"){
+					this.$refs.alert.appear('Logout is Triggered');
+				}
+			},
+
+			triggerNetlifyIdentityAction(action){
+				if (action == "login" || action == "signup"){
+					this.$refs.alert.appear('Login is Triggered');
+				} else if (action == "logout"){
+					this.$refs.alert.appear('Logout is Triggered');
+				}
+			}
+		}
+	}
+</script>

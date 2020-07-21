@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@chenfengyuan/vue-carousel": "^1.0.5",
+    "@nuxtjs/auth": "^4.9.1",
     "@nuxtjs/axios": "^5.11.0",
     "@nuxtjs/bulma": "^1.2.7",
     "@nuxtjs/markdownit": "^1.2.9",
@@ -21,5 +22,7 @@
     "vue-template-compiler": "^2.6.11",
     "vue-typed-js": "^0.1.2"
   },
-  "devDependencies": {}
+  "devDependencies": {
+    "@nuxtjs/fontawesome": "^1.1.2"
+  }
 }
