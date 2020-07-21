@@ -1,12 +1,11 @@
 <template>
     <div class="section">    
         <div class="container sohei-form">
-<!-- 			<input 
+			<!-- <input 
 			    class="input sohei-input" 
 			    type="text" 
 			    placeholder="Please enter your email"
 			>
-
 			<input 
 			    class="input sohei-input" 
 			    type="password" 
@@ -77,11 +76,7 @@
 </style>
 
 <script type="text/javascript">
-	// import netlifyIdentity from 'netlify-identity-widget'
 	import {mapActions, mapState} from 'vuex'
-    
-    // netlifyIdentity.init();
-
 	export default {
 		computed: {
 			hasAccount(){
@@ -92,14 +87,6 @@
 			triggerGithubAuthentication(action){
 				if (action == "login" || action =="signup"){
 					this.$auth.loginWith('github');
-				} else if (action == "logout"){
-					this.$refs.alert.appear('Logout is Triggered');
-				}
-			},
-
-			triggerNetlifyIdentityAction(action){
-				if (action == "login" || action == "signup"){
-					this.$refs.alert.appear('Login is Triggered');
 				} else if (action == "logout"){
 					this.$refs.alert.appear('Logout is Triggered');
 				}

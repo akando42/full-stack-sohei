@@ -1,7 +1,7 @@
 <template>
 	<div class="section">
 		<div class="container sohei-form">
-			<input 
+			<!-- <input 
 			    class="input sohei-input" 
 			    type="text" 
 			    placeholder="Please enter your email"
@@ -10,7 +10,7 @@
 			    class="input sohei-input" 
 			    type="text" 
 			    placeholder="Please enter your password"
-			>
+			> -->
 
 			<div
 			    class="button sohei-button"
