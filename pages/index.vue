@@ -19,7 +19,6 @@ import CourseSlider from '~/components/CourseSlider.vue'
 import LeftFeature from '~/components/LeftFeature.vue'
 import RightFeature from '~/components/RightFeature.vue'
 import CallToAction from '~/components/CallToAction.vue'
-import Slide from '~/components/Slide.vue'
 
 export default {
 
