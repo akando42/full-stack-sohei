@@ -2,9 +2,7 @@
   <div>
     <Banner />
     <Divider />
-    <client-only>
-      <carousel :data="newData"></carousel>
-    </client-only>
+    <CourseSlider />
     <Divider />
     <LeftFeature />
     <Divider />
@@ -29,6 +27,7 @@ export default {
   components: {
     Banner, 
     Divider,
+    CourseSlider,
     LeftFeature, 
     RightFeature,
     CourseSlider,

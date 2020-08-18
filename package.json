@@ -19,6 +19,7 @@
     "faunadb": "^2.14.2",
     "netlify-identity-widget": "^1.8.0",
     "nuxt": "^2.13.0",
+    "vue-carousel": "^0.18.0",
     "vue-template-compiler": "^2.6.11",
     "vue-typed-js": "^0.1.2"
   },
