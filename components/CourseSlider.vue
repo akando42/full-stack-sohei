@@ -10,13 +10,13 @@
 	</div>
 </template>
 
-<style type="text/css">
+<style type="text/css"> 
 
-.sohei_course_slide {
-   display: grid;
-   justify-content: center;
-   align-content: center;
-}
+	.sohei_course_slide {
+	   display: grid;
+	   justify-content: center;
+	   align-content: center;
+	}
 
 </style>
 
@@ -46,7 +46,7 @@
 				slides: [
 					{
 						id: 1,
-						title: 'Slide 1',
+						title: 'Mobile and Web Design in Figma ',
 						description: 'Very Intesting Slide 1',
 						background_color: '#FF8466', 
 						color: '#fff', 
@@ -54,7 +54,7 @@
 					},
 					{
 						id: 2,
-						title: 'Slide 2',
+						title: 'Team Work and Leadership Development',
 						description: 'Very Intesting Slide 2',
 						background_color: '#000000',
 						color: '#fff',
@@ -62,7 +62,7 @@
 					},
 					{
 						id: 3,
-						title: 'Slide 3',
+						title: 'Netlify Function Server Development',
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
@@ -70,7 +70,7 @@
 					},
 					{
 						id: 4,
-						title: 'Slide 4',
+						title: 'Frontend Development in Vue',
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
@@ -78,7 +78,7 @@
 					},
 					{
 						id: 5,
-						title: 'Slide 5',
+						title: 'Icon Design with Figma',
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
@@ -86,7 +86,7 @@
 					},
 					{
 						id: 6,
-						title: 'Slide 6',
+						title: 'Contract Negotion for Freelancer',
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
