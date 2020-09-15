@@ -21,7 +21,6 @@ import RightFeature from '~/components/RightFeature.vue'
 import CallToAction from '~/components/CallToAction.vue'
 
 export default {
-
   // Adding Components
   components: {
     Banner, 
@@ -41,6 +40,7 @@ export default {
       }],
     };
   },
+
   data() {
     return {
       carouseldata: [
@@ -84,30 +84,31 @@ export default {
           { template: '<Slide slideTitle="Slide 3" />' },
       ]
    }
+  }
 }
-}
+
 </script>
 
 <style>
 
-.my-container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+  .my-container {
+    margin: 0 auto;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
 
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
+  .subtitle {
+    font-weight: 300;
+    font-size: 42px;
+    color: #526488;
+    word-spacing: 5px;
+    padding-bottom: 15px;
+  }
 
-.links {
-  padding-top: 15px;
-}
+  .links {
+    padding-top: 15px;
+  }
 </style>

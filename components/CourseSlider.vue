@@ -2,8 +2,8 @@
 	<div class="section">
 		<div class="container">	
 				<Carousel per-page="3" pagination-position="bottom" class="columns">
-					<Slide v-for="slide in slides" class="column sohei_course_slide">
-						<Card v-bind:sohei_slide_spec="slide"></Card>
+					<Slide v-for="course in slides" :key="course.id" class="column sohei_course_slide">
+						<Card v-bind:sohei_slide_spec="course"></Card>
 					</Slide>
 				</Carousel>
 		</div>
@@ -24,6 +24,10 @@
 	import Card from '~/components/Card.vue'
 	import Carousel from 'vue-carousel/src/Carousel.vue'
 	import Slide from 'vue-carousel/src/Slide.vue'
+	import Figma from '~/assets/courses/figma.jpg'
+	import MangMinh from '~/assets/courses/MangMinh.png'
+	import Serverless from '~/assets/courses/serverless.jpg'
+	import Vue from '~/assets/courses/vue.jpg'
 
 	export default {
 		components: {
@@ -32,7 +36,8 @@
 			Card
 		},
 		computed: {
-			courses(){
+			data(){
+				console.log("Great", this.$store.state.courses)
 				return this.$store.state.courses
 			}
 		}, 
@@ -45,7 +50,7 @@
 						description: 'Very Intesting Slide 1',
 						background_color: '#FF8466', 
 						color: '#fff', 
-						image: 'https://miro.medium.com/max/3840/1*EFXXj66_mpdQ63BQZt821A.jpeg'
+						image: Figma
 					},
 					{
 						id: 2,
@@ -53,7 +58,7 @@
 						description: 'Very Intesting Slide 2',
 						background_color: '#000000',
 						color: '#fff',
-						image: 'https://miro.medium.com/max/3840/1*EFXXj66_mpdQ63BQZt821A.jpeg'
+						image: MangMinh
 					},
 					{
 						id: 3,
@@ -61,7 +66,7 @@
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
-						image: 'https://miro.medium.com/max/3840/1*EFXXj66_mpdQ63BQZt821A.jpeg'
+						image: Serverless
 					},
 					{
 						id: 4,
@@ -69,7 +74,7 @@
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
-						image: 'https://miro.medium.com/max/3840/1*EFXXj66_mpdQ63BQZt821A.jpeg'
+						image: Vue
 					},
 					{
 						id: 5,
@@ -77,15 +82,15 @@
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
-						image: 'https://miro.medium.com/max/3840/1*EFXXj66_mpdQ63BQZt821A.jpeg'
+						image: Figma
 					},
-						{
+					{
 						id: 6,
 						title: 'Slide 6',
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
-						image: 'https://miro.medium.com/max/3840/1*EFXXj66_mpdQ63BQZt821A.jpeg'
+						image: MangMinh
 					}
 				]
 			}
