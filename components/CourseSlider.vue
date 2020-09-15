@@ -86,7 +86,7 @@
 					},
 					{
 						id: 6,
-						title: 'Contract Negotion for Freelancer',
+						title: 'Contract Negotiation for Freelancer',
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
