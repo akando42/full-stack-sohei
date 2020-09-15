@@ -28,6 +28,7 @@
 	import MangMinh from '~/assets/courses/MangMinh.png'
 	import Serverless from '~/assets/courses/serverless.jpg'
 	import Vue from '~/assets/courses/vue.jpg'
+	import GordenHorde from '~/assets/courses/Golden_Horde.png'
 
 	export default {
 		components: {
@@ -90,7 +91,7 @@
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
-						image: MangMinh
+						image: GordenHorde
 					}
 				]
 			}
