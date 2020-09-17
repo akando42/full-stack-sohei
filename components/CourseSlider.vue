@@ -50,7 +50,8 @@
 						title: 'Mobile and Web Design in Figma ',
 						description: 'Very Intesting Slide 1',
 						background_color: '#FF8466', 
-						color: '#fff', 
+						color: '#fff',
+						link: '/mobile_design',
 						image: Figma
 					},
 					{
@@ -59,6 +60,7 @@
 						description: 'Very Intesting Slide 2',
 						background_color: '#000000',
 						color: '#fff',
+						link: '/team_work',
 						image: MangMinh
 					},
 					{
@@ -67,6 +69,7 @@
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
+						link: '/team_work',
 						image: Serverless
 					},
 					{

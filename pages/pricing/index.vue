@@ -29,6 +29,13 @@
     	head(){
             return {
             	title: 'Full Stack Sohei - Pricing for Each Courses',
+            	meta: [
+			        {
+			          hid: 'description',
+			          name: 'description',
+			          content: 'Monthly and Annual Pricing For Each Courses'
+			        }
+			    ],
             }
     	},
     	components: {

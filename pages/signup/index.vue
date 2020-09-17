@@ -21,6 +21,13 @@
 		head(){
 			return {
 				title: 'Full Stack Sohei - Sign Up With Github',
+				meta: [
+			        {
+			            hid: 'description',
+			            name: 'description',
+			            content: 'Sign Up With Your Github Account to Access Content'
+			        }
+			    ],
 			}
 		},
 

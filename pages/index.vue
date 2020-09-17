@@ -36,6 +36,13 @@ export default {
   head() {
     return {
       title: 'Full Stack Sohei - Reverse Engineer Everything',
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: 'Design, Engineer and Scale Mobile-First Full Stack Web Application with Figma, VueJS, NuxtJS and Netlify'
+        }
+      ],
       script: [{
         src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
       }],
