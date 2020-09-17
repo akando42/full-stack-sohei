@@ -1,6 +1,13 @@
 <template>
-	<div class="container sohei-error is-fullheight">
-		<h1>{{ message }}</h1>
+	<div class="section sohei-error is-fullheight">
+		<div class="container is-fullhd ">
+			<div class="status_code">
+				{{ statusCode }}
+			</div>
+			<div class="status_message">
+				{{ message }}
+			</div>
+		</div>
 	</div>
 </template>
 <style type="text/css">
@@ -8,6 +15,12 @@
 	display: flex;
 	align-items: center;
 	justify-content: center;
+}
+.status_code {
+	font-size: 100px;
+}
+.status_message {
+	font-size: 30px;
 }
 </style>
 <script>	
@@ -21,7 +34,7 @@ export default {
 	}, 
 	computed: {
 		statusCode(){
-            return (this.error && this.error.statusCode)
+            return this.error.statusCode
 		},
 
 		message(){
