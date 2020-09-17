@@ -26,6 +26,11 @@
 <script type="text/javascript">
 	import PricingCard from "~/components/PricingCard.vue"
     export default {
+    	head(){
+            return {
+            	title: 'Full Stack Sohei - Pricing for Each Courses',
+            }
+    	},
     	components: {
     		PricingCard
     	}

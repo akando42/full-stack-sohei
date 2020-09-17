@@ -19,9 +19,7 @@ $ yarn generate
 ```
 
 ## Immediate Tasks
-[ ] Custom Content Creator Signup
-[ ] Add New Content
-[ ] Display New Content
+[ ] CMS APIs 
 
 ## Animations
 [Animation]

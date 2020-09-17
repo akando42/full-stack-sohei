@@ -18,6 +18,11 @@
 	import SignupForm from "~/components/SignupForm"
 
 	export default {
+		head(){
+			return {
+				title: 'Full Stack Sohei - Sign Up With Github',
+			}
+		},
 
 		components: {
 			SignupForm

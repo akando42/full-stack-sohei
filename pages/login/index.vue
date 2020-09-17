@@ -12,6 +12,11 @@
 	import LoginForm from "~/components/LoginForm"
 
 	export default {
+		head(){
+            return {
+            	title: 'Full Stack Sohei - Student Account Access'
+            }
+		},
 		computed: {
 			hasAccount(){
 				return this.$store.state.user.hasAccount

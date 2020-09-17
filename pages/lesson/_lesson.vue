@@ -3,12 +3,14 @@
 	    <h1>{{lessonPost.title}}</h1>
 	    <div class="description"> {{lessonPost.description}}</div>
 	    <div class="content"> {{lessonPost.body}} </div>
-		<iframe 
-		  class="player"
-		  width="1120" height="630" 
-		  v-bind:src="'https://www.youtube.com/embed/'+lessonPost.video_id+'?controls=0'"
-		  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
-		</iframe>
+	    <div>
+			<iframe 
+			  class="player"
+			  width="1120" height="630" 
+			  v-bind:src="'https://www.youtube.com/embed/'+lessonPost.video_id+'?controls=0'"
+			  frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+			</iframe>
+		</div>
     </article>
 </template>
 

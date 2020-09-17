@@ -35,6 +35,7 @@ export default {
   // Adding Netlify Identity Function
   head() {
     return {
+      title: 'Full Stack Sohei - Reverse Engineer Everything',
       script: [{
         src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
       }],
