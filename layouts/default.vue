@@ -1,7 +1,7 @@
 <template>
   <div>
     <Navigation />
-    <nuxt />
+    <nuxt class="sohei_world" />
     <Footer />
   </div>
   </div>
@@ -35,6 +35,11 @@ html {
   box-sizing: border-box;
   margin: 0;
 }
+
+.sohei_world {
+  min-height: 90vh;
+}
+
 
 .davinci_private_note {
   transform: rotateY(180deg) !important;

@@ -14,8 +14,9 @@ import '../css/main.css'
 import '../node_modules/bulma/css/bulma.css'
 
 import _6f6c098b from '../layouts/default.vue'
+import _7c9fe8ae from '../layouts/lesson.vue'
 
-const layouts = { "_default": sanitizeComponent(_6f6c098b) }
+const layouts = { "_default": sanitizeComponent(_6f6c098b),"_lesson": sanitizeComponent(_7c9fe8ae) }
 
 export default {
   render (h, props) {
