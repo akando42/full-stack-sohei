@@ -36,12 +36,14 @@
 			Slide,
 			Card
 		},
+
 		computed: {
 			data(){
 				console.log("Great", this.$store.state.courses)
 				return this.$store.state.courses
 			}
 		}, 
+		
 		data(){
 			return {
 				slides: [

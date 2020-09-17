@@ -1,12 +1,5 @@
 [
   {
-    "name": "about",
-    "path": "/about",
-    "component": "/Users/hoangdov/Development/FullStackSohei/pages/about/index.vue",
-    "chunkName": "pages/about/index",
-    "_name": "_f96f4660"
-  },
-  {
     "name": "course",
     "path": "/course",
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/course/index.vue",
@@ -47,6 +40,13 @@
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/login/index.vue",
     "chunkName": "pages/login/index",
     "_name": "_eb9df4a8"
+  },
+  {
+    "name": "philosophy",
+    "path": "/philosophy",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/philosophy/index.vue",
+    "chunkName": "pages/philosophy/index",
+    "_name": "_77d46038"
   },
   {
     "name": "pricing",

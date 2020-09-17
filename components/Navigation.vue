@@ -21,9 +21,12 @@
     	</div>
     	<div id="navbarFullStackSohei" class="navbar-menu">
     		<div class="navbar-start sohei-menu">
-    			<a class="navbar-item sohei-item" href="/about">
+    			<a class="navbar-item sohei-item" href="/philosophy">
     		        Philosophy
   		    </a>
+          <a class="navbar-item sohei-item" href="/event">
+                Events
+          </a>
   		    <div class="navbar-item has-dropdown is-hoverable">
   		        <a class="navbar-link navbar-item sohei-item">Courses</a> 
   		        <div class="navbar-dropdown">
