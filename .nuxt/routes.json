@@ -1,10 +1,38 @@
 [
   {
+    "name": "about",
+    "path": "/about",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/about/index.vue",
+    "chunkName": "pages/about/index",
+    "_name": "_f96f4660"
+  },
+  {
+    "name": "course",
+    "path": "/course",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/course/index.vue",
+    "chunkName": "pages/course/index",
+    "_name": "_ce9a5fe4"
+  },
+  {
     "name": "dashboard",
     "path": "/dashboard",
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/dashboard/index.vue",
     "chunkName": "pages/dashboard/index",
     "_name": "_260659d2"
+  },
+  {
+    "name": "event",
+    "path": "/event",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/event/index.vue",
+    "chunkName": "pages/event/index",
+    "_name": "_090fff9d"
+  },
+  {
+    "name": "faqs",
+    "path": "/faqs",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/faqs/index.vue",
+    "chunkName": "pages/faqs/index",
+    "_name": "_ff0418e0"
   },
   {
     "name": "lesson",
@@ -28,6 +56,13 @@
     "_name": "_6362a86e"
   },
   {
+    "name": "profile",
+    "path": "/profile",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/profile/index.vue",
+    "chunkName": "pages/profile/index",
+    "_name": "_55dfd5ec"
+  },
+  {
     "name": "signup",
     "path": "/signup",
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/signup/index.vue",
@@ -40,6 +75,13 @@
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/lesson/_lesson.vue",
     "chunkName": "pages/lesson/_lesson",
     "_name": "_5a8737b0"
+  },
+  {
+    "name": "profile-user",
+    "path": "/profile/:user",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/profile/_user.vue",
+    "chunkName": "pages/profile/_user",
+    "_name": "_7b84a5c4"
   },
   {
     "name": "index",

@@ -22,7 +22,7 @@
     	<div id="navbarFullStackSohei" class="navbar-menu">
     		<div class="navbar-start sohei-menu">
     			<a class="navbar-item sohei-item" href="/about">
-    		        About  
+    		        Philosophy
   		    </a>
   		    <div class="navbar-item has-dropdown is-hoverable">
   		        <a class="navbar-link navbar-item sohei-item">Courses</a> 
