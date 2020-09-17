@@ -7,6 +7,12 @@
 			<div class="status_message">
 				{{ message }}
 			</div>
+
+			<div>
+				<nuxt-link to="/">
+					Return to homepage
+				</nuxt-link>	
+			</div>
 		</div>
 	</div>
 </template>
