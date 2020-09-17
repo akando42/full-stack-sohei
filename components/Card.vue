@@ -1,15 +1,17 @@
 <template>
 	<div class="sohei_card">
-		<div class="sohei_card_image" v-bind:style="{
-			backgroundColor: '#c4c4c4',
-			backgroundImage: 'url('+ sohei_slide_spec.image + ')'
-		}">
-			
-		</div>
-		<div class="sohei_card_title">
-			<strong class="sohei_card_text">{{ sohei_slide_spec.title }}</strong>
-			<!-- <p>{{ sohei_slide_spec.description }}</p> -->
-		</div>
+		<a :href="sohei_slide_spec.link">
+			<div class="sohei_card_image" v-bind:style="{
+				backgroundColor: '#c4c4c4',
+				backgroundImage: 'url('+ sohei_slide_spec.image + ')'
+			}">
+				
+			</div>
+			<div class="sohei_card_title">
+				<strong class="sohei_card_text">{{ sohei_slide_spec.title }}</strong>
+				<!-- <p>{{ sohei_slide_spec.description }}</p> -->
+			</div>
+	    </a>
 	</div>
 </template>
 <style type="text/css">

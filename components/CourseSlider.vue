@@ -78,6 +78,7 @@
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
+						link: '/team_work',
 						image: Vue
 					},
 					{
@@ -86,6 +87,7 @@
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
+						link: '/team_work',
 						image: Figma
 					},
 					{
@@ -94,6 +96,7 @@
 						description: 'Very Intesting Slide 3',
 						background_color: '#000000',
 						color: '#fff',
+						link: '/team_work',
 						image: GordenHorde
 					}
 				]
