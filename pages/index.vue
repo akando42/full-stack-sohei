@@ -11,90 +11,90 @@
     <CallToAction />
   </div>
 </template>
+
 <script>
 
-import Banner from '~/components/Banner.vue'
-import Divider from '~/components/Divider.vue'
-import CourseSlider from '~/components/CourseSlider.vue'
-import LeftFeature from '~/components/LeftFeature.vue'
-import RightFeature from '~/components/RightFeature.vue'
-import CallToAction from '~/components/CallToAction.vue'
+  import Banner from '~/components/Banner.vue'
+  import Divider from '~/components/Divider.vue'
+  import CourseSlider from '~/components/CourseSlider.vue'
+  import LeftFeature from '~/components/LeftFeature.vue'
+  import RightFeature from '~/components/RightFeature.vue'
+  import CallToAction from '~/components/CallToAction.vue'
 
-export default {
-  // Adding Components
-  components: {
-    Banner, 
-    Divider,
-    CourseSlider,
-    LeftFeature, 
-    RightFeature,
-    CourseSlider,
-    CallToAction,
-  },
+  export default {
+    // Adding Components
+    components: {
+      Banner, 
+      Divider,
+      CourseSlider,
+      LeftFeature, 
+      RightFeature,
+      CourseSlider,
+      CallToAction,
+    },
 
-  // Adding Netlify Identity Function
-  head() {
-    return {
-      title: 'Full Stack Sohei - Reverse Engineer Everything',
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: 'Design, Engineer and Scale Mobile-First Full Stack Web Application with Figma, VueJS, NuxtJS and Netlify'
-        }
-      ],
-      script: [{
-        src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
-      }],
-    };
-  },
+    // Adding Netlify Identity Function
+    head() {
+      return {
+        title: 'Full Stack Sohei - Reverse Engineer Everything',
+        meta: [
+          {
+            hid: 'description',
+            name: 'description',
+            content: 'Design, Engineer and Scale Mobile-First Full Stack Web Application with Figma, VueJS, NuxtJS and Netlify'
+          }
+        ],
+        script: [{
+          src: 'https://identity.netlify.com/v1/netlify-identity-widget.js'
+        }],
+      };
+    },
 
-  data() {
-    return {
-      carouseldata: [
-        {
-          id: 1,
-          message: 'First message',
-          content(createElement, content) {
-            return createElement('img', {
-              attrs: {
-                src: '../assets/courses/vue.jpg',
-              }
-            })
+    data() {
+      return {
+        carouseldata: [
+          {
+            id: 1,
+            message: 'First message',
+            content(createElement, content) {
+              return createElement('img', {
+                attrs: {
+                  src: '../assets/courses/vue.jpg',
+                }
+              })
+            }
+          },
+          {
+            id: 2,
+            message: 'Any message',
+            content(createElement, content) {
+              return createElement('img', {
+                attrs: {
+                  src: '../assets/courses/figma.jpg',
+                }
+              })
+            }
+          },
+          {
+            id: 3,
+            message: 'Any message',
+            content(createElement, content) {
+              return createElement('img', {
+                attrs: {
+                  src: '../assets/courses/serverless.jpg',
+                }
+              })
+            }
           }
-        },
-        {
-          id: 2,
-          message: 'Any message',
-          content(createElement, content) {
-            return createElement('img', {
-              attrs: {
-                src: '../assets/courses/figma.jpg',
-              }
-            })
-          }
-        },
-        {
-          id: 3,
-          message: 'Any message',
-          content(createElement, content) {
-            return createElement('img', {
-              attrs: {
-                src: '../assets/courses/serverless.jpg',
-              }
-            })
-          }
-        }
-      ],
-      newData: [
-          { template: '<Slide slideTitle="Slide 1" />' },
-          { template: '<Slide slideTitle="Slide 2" />' },
-          { template: '<Slide slideTitle="Slide 3" />' },
-      ]
-   }
+        ],
+        newData: [
+            { template: '<Slide slideTitle="Slide 1" />' },
+            { template: '<Slide slideTitle="Slide 2" />' },
+            { template: '<Slide slideTitle="Slide 3" />' },
+        ]
+     }
+    }
   }
-}
-
 </script>
 
 <style>

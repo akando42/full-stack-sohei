@@ -13,7 +13,7 @@
 				<div class="column">
 					<div class="description">
 						<div class="sohei-feature-title davinci-private-note">
-						    Master The 20% To Do 80% Of The Job 
+						    Master The 130% To Get Things Done in 30% of Time 
 						</div>
 
 						<p class="paragraph">
