@@ -50,51 +50,52 @@
       };
     },
 
-    data() {
-      return {
-        carouseldata: [
-          {
-            id: 1,
-            message: 'First message',
-            content(createElement, content) {
-              return createElement('img', {
-                attrs: {
-                  src: '../assets/courses/vue.jpg',
-                }
-              })
-            }
-          },
-          {
-            id: 2,
-            message: 'Any message',
-            content(createElement, content) {
-              return createElement('img', {
-                attrs: {
-                  src: '../assets/courses/figma.jpg',
-                }
-              })
-            }
-          },
-          {
-            id: 3,
-            message: 'Any message',
-            content(createElement, content) {
-              return createElement('img', {
-                attrs: {
-                  src: '../assets/courses/serverless.jpg',
-                }
-              })
-            }
-          }
-        ],
-        newData: [
-            { template: '<Slide slideTitle="Slide 1" />' },
-            { template: '<Slide slideTitle="Slide 2" />' },
-            { template: '<Slide slideTitle="Slide 3" />' },
-        ]
-     }
-    }
+    // data() {
+    //   return {
+    //     carouseldata: [
+    //       {
+    //         id: 1,
+    //         message: 'First message',
+    //         content(createElement, content) {
+    //           return createElement('img', {
+    //             attrs: {
+    //               src: '../assets/courses/vue.jpg',
+    //             }
+    //           })
+    //         }
+    //       },
+    //       {
+    //         id: 2,
+    //         message: 'Any message',
+    //         content(createElement, content) {
+    //           return createElement('img', {
+    //             attrs: {
+    //               src: '../assets/courses/figma.jpg',
+    //             }
+    //           })
+    //         }
+    //       },
+    //       {
+    //         id: 3,
+    //         message: 'Any message',
+    //         content(createElement, content) {
+    //           return createElement('img', {
+    //             attrs: {
+    //               src: '../assets/courses/serverless.jpg',
+    //             }
+    //           })
+    //         }
+    //       }
+    //     ],
+    //     newData: [
+    //         { template: '<Slide slideTitle="Slide 1" />' },
+    //         { template: '<Slide slideTitle="Slide 2" />' },
+    //         { template: '<Slide slideTitle="Slide 3" />' },
+    //     ]
+    //  }
+    // },
   }
+
 </script>
 
 <style>

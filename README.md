@@ -19,7 +19,9 @@ $ yarn generate
 ```
 
 ## Immediate Tasks
-[ ] CMS APIs 
+[ ] Loading JS Content from API
+[ ] Write API for Users Account
+[ ] Write API for Courses Content
 
 ## Animations
 [Animation]
