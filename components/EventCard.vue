@@ -1,6 +1,6 @@
 <template>
 	<nuxt-link :to="'/event/' + event.id">
-	    <div class="vue_event">
+	    <div class="vue_event -has-shadow">
 	    	<span class="tits">
 	    		@{{ event.time }} on {{ parsedDate }}
 	    	</span>
@@ -14,9 +14,12 @@
 <style type="text/css">
 	.vue_event {
 		background-color: red;
-		box-shadow: 10px 10px 8px #cccccc;
 		border: 1px solid #cccccc;
 		margin: 10px 0px;
+	}
+
+	.vue_event:hover {
+		
 	}
 
 	.tits {
