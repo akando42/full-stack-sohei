@@ -24,7 +24,7 @@
 			}
 		},
 		asyncData({ $axios }){
-			return $axios.get('http://localhost:8888/.netlify/functions/events').then(response => {
+			return $axios.get(process.env.baseUrl+'/.netlify/functions/events').then(response => {
 				return {
 				  events: response.data
 				}
