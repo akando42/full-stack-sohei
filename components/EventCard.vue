@@ -13,9 +13,8 @@
 
 <style type="text/css">
 	.vue_event {
-		background-color: red;
 		border: 1px solid #cccccc;
-		margin: 10px 0px;
+		margin: 10px;
 	}
 
 	.vue_event:hover {

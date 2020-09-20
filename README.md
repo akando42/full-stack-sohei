@@ -16,12 +16,14 @@ $ yarn start
 
 # generate static project
 $ yarn generate
+
+# start mock db
+$ 
 ```
 
 ## Immediate Tasks
-[ ] Loading JS Content from API
-[ ] Write API for Users Account
-[ ] Write API for Courses Content
+[X] Write Sample JSON API for Event 
+[ ] Loading JS Content from API to Event Page
 
 ## Animations
 [Animation]

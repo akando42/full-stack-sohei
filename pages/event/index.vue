@@ -24,14 +24,14 @@
 			}
 		},
 		asyncData({ $axios }){
-			return $axios.get('http://localhost:3000/events').then(response => {
+			return $axios.get('http://localhost:8888/.netlify/functions/events').then(response => {
 				return {
 				  events: response.data
 				}
 			}).catch(e => {
 				error({
-				  statusCode: 503,
-				  message: 'Unable'
+				  statusCode: 505,
+				  message: 'Server Error'
 				})
 			})
     	},
