@@ -13,7 +13,6 @@ const _77d46038 = () => interopDefault(import('../pages/philosophy/index.vue' /*
 const _6362a86e = () => interopDefault(import('../pages/pricing/index.vue' /* webpackChunkName: "pages/pricing/index" */))
 const _55dfd5ec = () => interopDefault(import('../pages/profile/index.vue' /* webpackChunkName: "pages/profile/index" */))
 const _1093ee6a = () => interopDefault(import('../pages/signup/index.vue' /* webpackChunkName: "pages/signup/index" */))
-const _f6397576 = () => interopDefault(import('../pages/event/_id.vue' /* webpackChunkName: "pages/event/_id" */))
 const _5a8737b0 = () => interopDefault(import('../pages/lesson/_lesson.vue' /* webpackChunkName: "pages/lesson/_lesson" */))
 const _7b84a5c4 = () => interopDefault(import('../pages/profile/_user.vue' /* webpackChunkName: "pages/profile/_user" */))
 const _159ca25c = () => interopDefault(import('../pages/index.vue' /* webpackChunkName: "pages/index" */))
@@ -74,10 +73,6 @@ export const routerOptions = {
     path: "/signup",
     component: _1093ee6a,
     name: "signup"
-  }, {
-    path: "/event/:id",
-    component: _f6397576,
-    name: "event-id"
   }, {
     path: "/lesson/:lesson",
     component: _5a8737b0,
