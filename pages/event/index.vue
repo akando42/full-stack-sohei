@@ -23,7 +23,7 @@
 				title: 'Event Listing'
 			}
 		},
-		asyncData({ $axios }){
+		asyncData({ $axios, error }){
 			return $axios.get(process.env.baseUrl+'/.netlify/functions/events').then(response => {
 				return {
 				  events: response.data
@@ -31,7 +31,7 @@
 			}).catch(e => {
 				error({
 				  statusCode: 505,
-				  message: 'Server Error'
+				  message: 'No Event Is Available At This Time'
 				})
 			})
     	},
