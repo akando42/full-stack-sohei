@@ -70,6 +70,13 @@
     "_name": "_1093ee6a"
   },
   {
+    "name": "event-id",
+    "path": "/event/:id",
+    "component": "/Users/hoangdov/Development/FullStackSohei/pages/event/_id.vue",
+    "chunkName": "pages/event/_id",
+    "_name": "_f6397576"
+  },
+  {
     "name": "lesson-lesson",
     "path": "/lesson/:lesson",
     "component": "/Users/hoangdov/Development/FullStackSohei/pages/lesson/_lesson.vue",

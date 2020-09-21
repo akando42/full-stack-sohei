@@ -7,18 +7,25 @@
 	    	<h4 class="ass">
 	    		{{ event.title }}
 	    	</h4>
+	    	<span> 
+	    	    {{event.attendees.length}} attending 
+	    	</span>
 	    </div>
 	</nuxt-link>
 </template>
 
 <style type="text/css">
 	.vue_event {
-		border: 1px solid #cccccc;
-		margin: 10px;
+		border: 2px solid black;
+		margin: 20px 100px;
+		padding: 20px;
+		transition: all 0.3s linear;
+        cursor: pointer;
 	}
 
 	.vue_event:hover {
-		
+		transform: scale(1.01);
+		box-shadow: 0 3px 12px 0 rgba(0,0,0,0.2), 0 1px 15px 0 rgba(0,0,0,0.19);
 	}
 
 	.tits {
