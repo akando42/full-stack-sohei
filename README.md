@@ -8,7 +8,7 @@
 $ yarn install
 
 # serve with hot reload at localhost:3000
-$ yarn dev
+$ PORT=3001 yarn dev
 
 # build for production and launch server
 $ yarn build
@@ -17,12 +17,13 @@ $ yarn start
 # generate static project
 $ yarn generate
 
-# start mock db
-$ 
+# starting the netlify server
+$ netlify dev
 ```
 
 ## Immediate Tasks
 [X] Write Sample JSON API for Event 
+[ ] Query JSON from FaunaDB using Netlify Function
 [ ] Loading JS Content from API to Event Page
 
 ## Animations

@@ -13,7 +13,7 @@ exports.handler = async (event, context) => {
         data: data
     }
 
-    // Constract the Fauna Query
+    // Launch the Fauna Query 
     return client.query(q.Create(q.Ref('classes/users'), newUser))
         .then((response) => {
             console.log('success', response)

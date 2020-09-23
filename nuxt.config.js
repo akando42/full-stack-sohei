@@ -6,7 +6,8 @@ export default {
   */
   mode: 'universal',
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:8888'
+    baseUrl: process.env.BASE_URL || 'http://localhost:8888', 
+    FAUNADB_SERVER_SECRET: process.env.FAUNADB_SERVER_SECRET || 'fnAD2VkdwHACDQY_--9lKd7GzGtJDPfDE4IBFbZ3'
   },
   /*
   ** Headers of the page

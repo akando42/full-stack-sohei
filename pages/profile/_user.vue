@@ -5,6 +5,7 @@
 		</h1>
 	</div>
 </template>
+
 <script type="text/javascript">
 	export default {
 		head(){
@@ -24,6 +25,5 @@
                 return this.$route.params.user
 			}
 		}
-	}
-</script>
+	}</script>
 <style type="text/css"></style>

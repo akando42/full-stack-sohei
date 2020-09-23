@@ -2,6 +2,9 @@
 	<div>
 		<div class="event_detail_card">
 		    <h1 class="event_title">Event {{id}}</h1>
+		    <div>
+		    	Event Name
+		    </div>
 		</div>
 	</div>
 </template>
@@ -17,20 +20,37 @@
 	box-shadow: 0 3px 12px 0 rgba(0,0,0,0.2), 0 1px 15px 0 rgba(0,0,0,0.19);
 }*/
 
-
-
 .event_title {
 	font-size: 30px;
 }
-
 </style>
+
 <script type="text/javascript">
 	export default {
 		head(){
 			return {
-				title: 'User #' + this.id, 
+				title: 'Event ' + this.id, 
+				meta: [
+				    {
+				    	hid: 'description', 
+				    	name: 'description',
+				    	content: 'Detail information about event' + this.event.title
+				    }
+				]
 			}
 		},
+
+		async asyncData({ $axios, error}){
+			try {
+               
+			} catch (e){
+				error ({
+					statusCode: 503, 
+					message: 'Event Detail is Not Available'
+				})
+			}
+		},
+
 		computed: {
             id(){
             	return this.$route.params.id

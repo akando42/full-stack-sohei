@@ -4,39 +4,35 @@
 		<EventCard
 		    v-for="(event, index) in events"
 		    :key="index"
-		    :event="event"
+		    :event="event.data"
 		    :data-index="index"
 	    />
     </div>
 </template>
 
-<style type="text/css">
-	
-</style>
-
+<style type="text/css"></style>
 <script type="text/javascript">
 	import EventCard from '~/components/EventCard.vue'
-	
 	export default {
 		head(){
 			return {
 				title: 'Event Listing'
 			}
 		},
-		asyncData({ $axios, error }){
-			return $axios.get(process.env.baseUrl+'/.netlify/functions/events').then(response => {
-				return {
-				  events: response.data
-				}
-			}).catch(e => {
-				error({
-				  statusCode: 505,
-				  message: 'No Event Is Available At This Time'
-				})
-			})
+
+		async asyncData({ $axios, error }){
+			try {
+                const { data } = await $axios.get(process.env.baseUrl+'/.netlify/functions/all_events')
+                console.log("Data", data)
+                return { events: data }
+			} catch (e){
+                error ({
+                	statusCode: 503, 
+                	message: 'No Event is Available At This Time.'
+                })
+			}
     	},
 		components: {
 		    EventCard
 	    }
-	}	
-</script>
+	}	</script>
