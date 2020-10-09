@@ -1,14 +1,14 @@
 <template>
-	<nuxt-link :to="'/event/' + event.id">
+	<nuxt-link :to="'/event/' + eventIndex">
 	    <div class="vue_event -has-shadow">
 	    	<span class="tits">
-	    		@{{ event.time }} on {{ parsedDate }}
+	    		@{{ event.data.time }} on {{ parsedDate }}
 	    	</span>
 	    	<h4 class="ass">
-	    		{{ event.title }}
+	    		{{ event.data.title }}
 	    	</h4>
 	    	<span> 
-	    	    {{event.attendees.length}} attending 
+	    	    {{event.data.attendees.length}} attending 
 	    	</span>
 	    </div>
 	</nuxt-link>
@@ -46,8 +46,14 @@
 		},
 		computed: {
 			parsedDate(){
-				const eventDate = new Date(this.event.date)
+				const eventDate = new Date(this.event.data.date)
 				return eventDate.toDateString()
+			},
+
+			eventIndex(){
+				const eventId = this.event.id
+				console.log("EVENT ", eventId)
+				return eventId
 			}
 		}
 	}

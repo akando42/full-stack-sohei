@@ -22,9 +22,13 @@ $ netlify dev
 ```
 
 ## Immediate Tasks
-[X] Write Sample JSON API for Event 
-[ ] Query JSON from FaunaDB using Netlify Function
-[ ] Loading JS Content from API to Event Page
+[X] Query Event Detail by ID from FaunaDB.
+[X] Load Event Detail to Individual Event Page.
+    - Get the ID from Individual Data package.
+    - Get the ID from Server Data Package.
+
+[ ] Create New Event and Add to Database
+[ ] Write Content for Philosophy Page
 
 ## Animations
 [Animation]
@@ -50,3 +54,4 @@ https://dashboard.fauna.com/#auth=eyJhbGciOiJIUzI1NiJ9.eyJzaXRlX2lkIjoiYTQ3NTFhN
 ```
 $ netlify functions:invoke myfunction --payload './payloads/sample_user.json'
 ```
+## I dont think so... 39 was a mass execution to send a message ...

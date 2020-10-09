@@ -1,10 +1,11 @@
 <template>
 	<div>
-		<h1>Events</h1>
+		<h1>Events</h1> 
 		<EventCard
 		    v-for="(event, index) in events"
 		    :key="index"
-		    :event="event.data"
+		    :event="event"
+		    :event-index="event.ref"
 		    :data-index="index"
 	    />
     </div>
@@ -22,6 +23,7 @@
 
 		async asyncData({ $axios, error }){
 			try {
+				// Loading Event by ID
                 const { data } = await $axios.get(process.env.baseUrl+'/.netlify/functions/all_events')
                 console.log("Data", data)
                 return { events: data }
