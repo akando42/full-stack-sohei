@@ -51,9 +51,9 @@
 			},
 
 			eventIndex(){
-				const eventId = this.event.id
-				console.log("EVENT ", eventId)
-				return eventId
+				const eventIndex = this.event.ref['@ref'].id
+				console.log("EVENT ", eventIndex)
+				return eventIndex
 			}
 		}
 	}

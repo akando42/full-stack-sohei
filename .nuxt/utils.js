@@ -150,7 +150,7 @@ export async function setContext (app, context) {
       payload: context.payload,
       error: context.error,
       base: '/',
-      env: {"baseUrl":"https://fullstacksohei.com","FAUNADB_SERVER_SECRET":"fnADxRpOB7ACDXWJBF-_4wA-kE82e5CTLl3GsLjR"}
+      env: {"baseUrl":"https://fullstacksohei.com","FAUNADB_SERVER_SECRET":"fnAD2Z6f8ZACDfcEBMhEiKcKQ5A0QtBsgekUbOnV"}
     }
     // Only set once
     if (!process.static && context.req) {

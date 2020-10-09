@@ -6,7 +6,7 @@ export default {
   */
   mode: 'universal',
   env: {
-    baseUrl: process.env.BASE_URL || 'http://localhost:8888', 
+    baseUrl: process.env.BASE_URL || 'http://localhost:3001', 
     FAUNADB_SERVER_SECRET: process.env.FAUNADB_SERVER_SECRET || 'fnAD2Z6f8ZACDfcEBMhEiKcKQ5A0QtBsgekUbOnV'
   },
   

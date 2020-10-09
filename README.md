@@ -18,13 +18,14 @@ $ yarn start
 $ yarn generate
 
 # starting the netlify server
+$ export FAUNADB_SERVER_SECRET=fnAD2Z6f8ZACDfcEBMhEiKcKQ5A0QtBsgekUbOnV
 $ netlify dev
 ```
 
 ## Immediate Tasks
 [X] Query Event Detail by ID from FaunaDB.
 [X] Load Event Detail to Individual Event Page.
-    - Get the ID from Individual Data package.
+    - Get the ID from Client Data Package
     - Get the ID from Server Data Package.
 
 [ ] Create New Event and Add to Database
@@ -54,4 +55,3 @@ https://dashboard.fauna.com/#auth=eyJhbGciOiJIUzI1NiJ9.eyJzaXRlX2lkIjoiYTQ3NTFhN
 ```
 $ netlify functions:invoke myfunction --payload './payloads/sample_user.json'
 ```
-## I dont think so... 39 was a mass execution to send a message ...
