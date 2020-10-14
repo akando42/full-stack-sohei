@@ -25,6 +25,7 @@
   import EventService from '~/services/EventService.js'
 
   export default {
+    
     // Adding Components
     components: {
       Banner, 

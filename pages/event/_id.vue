@@ -1,10 +1,12 @@
 <template>
 	<div>
 		<div class="event_detail_card">
-		    <h1 class="event_title">Event {{id}}</h1>
+		    <h1 class="event_title">Event {{ $route.params.id }}</h1>
+		    
 		    <div>
-		    	{{event.title}}
+		       
 		    </div>
+		    
 		</div>
 	</div>
 </template>
@@ -30,30 +32,30 @@
 	export default {
 		head(){
 			return {
-				title: 'Event ' + this.event.title, 
+				title: 'Event ' + this.id,
 				meta: [
 				    {
 				    	hid: 'description', 
 				    	name: 'description',
-				    	content: 'Detail information about event' + this.event.title
+				    	content: 'Detail information about event' + this.id
 				    }
 				]
 			}
 		},
 
-		async asyncData({ $axios, error}){
-			try {
-                const { data } = await $axios.get(process.env.baseUrl+'/.netlify/functions/read_event'+params.id)
-                return {
-                	event: data
-                }
-			} catch (e){
-				error ({
-					statusCode: 503, 
-					message: 'Event Detail is Not Available'
-				})
-			}
-		},
+		// async asyncData({ $axios, error}){
+		// 	try {
+  //               const { data } = await $axios.get(process.env.baseUrl+'/.netlify/functions/read_event'+params.id)
+  //               return {
+  //               	event: data
+  //               }
+		// 	} catch (e){
+		// 		error ({
+		// 			statusCode: 503, 
+		// 			message: 'Event Detail is Not Available'
+		// 		})
+		// 	}
+		// },
 
 		computed: {
             id(){

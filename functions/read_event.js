@@ -9,12 +9,11 @@ const client = new faunadb.Client({
 })
 
 exports.handler = (event, context, callback) => {
-	console.log("PULLING EVENT DETAIL ID from Path", event.path)
 	const id = getId(event.path)
-
+	console.log("PULLING EVENT DETAIL ID from Path", event.path)
 	console.log(`Function to Pull Individual Event Detail. Read id: ${id}`)
-	
-	return client.query(q.Get(q.Ref(`classes/programming_events/${id}`)))
+	// serverClient.query(q.Get(q.Ref(q.Collection('posts'), '192903209792046592')))
+	return client.query(q.Get(q.Ref(q.Collection('programming_events'), `${id}`)))
 	.then((response) => {
 		console.log("success", response)
 		return callback(null, {

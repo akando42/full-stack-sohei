@@ -1,7 +1,7 @@
 <template>
 	<div>
 		<h1>
-			User <strong> {{ id }} </strong>
+			User <strong> {{ $route.params.user }} </strong>
 		</h1>
 	</div>
 </template>
@@ -10,18 +10,18 @@
 	export default {
 		head(){
             return {
-            	title: 'User #' + this.id,
+            	title: 'User #' + this.user,
             	meta: [
             	    {
             	    	hid: 'description',
             	    	name: 'description',
-            	    	content: 'Courses belongs to user ' + this.id
+            	    	content: 'Courses belongs to user ' + this.user
             	    }
             	]
             }
 		},
 		computed: {
-			id(){
+			user(){
                 return this.$route.params.user
 			}
 		}
