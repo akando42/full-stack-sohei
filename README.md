@@ -1,14 +1,1 @@
-# Reverse Engineering Everything
-
-### Frontend - NUXT.JS
-
-* 5 mains components
-
-- Vue2
-- Vue Router
-- Vuex (State storage)
-- Vue Server Render
-- Vue Meta
-
-
-### Backend - NetlifyCMS
+[DEMO](http://fullstacksohei.com/)
